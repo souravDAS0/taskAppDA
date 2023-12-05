@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 class="task-name">{{task.title}}</h2>
+    <h4 class="task-desc">{{task.description}}</h4>
+    <h5 class="task-duedate">Due by - {{task.dueDate | date}}</h5>
+    <div class="operations">
+        <a routerLink="/update-task/{{task._id}}"><span class="material-symbols-outlined">
+                edit
+            </span></a>
+        <a (click)="delete(task._id)"><span class="material-symbols-outlined">
+                delete
+            </span></a>
+        <input type="checkbox" name="isComplete" id="isComplete" value="Complete" [(ngModel)]="task.isComplete"
+            (change)="updateCompletion(task)">
+    </div>
+</div>

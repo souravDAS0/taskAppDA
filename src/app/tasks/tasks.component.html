@@ -1,0 +1,5 @@
+<app-header></app-header>
+<div class="task-wrapper">
+    <app-task *ngFor="let task of tasks" [task]="task" (deleteEvent)="deleteTask($event)"
+        (checkedEvent)="updateTask($event)"></app-task>
+</div>

@@ -1,0 +1,11 @@
+<section class="addTaskForm">
+    <div class="newTask">
+        <h2>Edit Task</h2>
+        <form #updateTaskForm="ngForm" (ngSubmit)="onUpdate()">
+            <input type="text" placeholder="Task name" name="title" [(ngModel)]="task.title">
+            <input type="text" placeholder="Task description" name="description" [(ngModel)]="task.description">
+            <input type="date" placeholder="Enter date" name="date" [(ngModel)]="task.dueDate">
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</section>

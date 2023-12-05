@@ -1,0 +1,66 @@
+* {
+    color: #141414;
+}
+
+.container {
+    padding: 16px;
+    // border: 2px solid red;
+    background: linear-gradient(275deg, #800080a1, #ff4433a7);
+    margin: 10px;
+    border-radius: 8px;
+
+    .task-name {
+        font-weight: 500;
+        padding: 0 0 5px 0;
+    }
+
+    .task-desc {
+        font-weight: 300;
+        padding: 5px 0;
+    }
+
+    .task-duedate {
+        font-weight: 600;
+    }
+
+    .operations {
+        padding: 16px 0 0 0;
+
+        a {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        input[type=checkbox] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 35%;
+            display: inline-block;
+            position: relative;
+            transition: 0.3s all ease-in-out;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                content: '\2713';
+                font-size: 40px;
+                line-height: 16px;
+                color: #fff;
+                transform: scale(0);
+                transition: 0.3s all ease-in-out;
+
+
+            }
+
+            &:checked{
+                background-color: #f56000;
+            }
+
+            &:checked::before {
+                transform: scale(1);
+            }
+        }
+    }
+}
