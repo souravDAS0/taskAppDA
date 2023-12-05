@@ -1,9 +1,16 @@
-.task-wrapper{
+.task-wrapper {
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 10px;
 
-    // app-task{
-    //     height:100%
-    // }
+}
+
+
+@media screen and (max-width:600px) {
+
+    .task-wrapper {
+        grid-template-columns: auto auto;
+        padding: 10px 0;
+    }
+
 }

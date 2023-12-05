@@ -4,14 +4,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: radial-gradient(#ffffff, #a29595);
 
     .newTask {
-        border: .5px solid #00ff00;
-        padding: 24px;
-        border-radius: 8px;
-        box-shadow: 6px 2px 10px 2px #e7968e,
-            -2px 0 10px 2px #00ff00;
-
+        border: 0.5px solid #00ff00;
+            padding: 24px;
+            background: linear-gradient(275deg, rgba(128, 0, 128, 0.631372549), rgba(255, 68, 51, 0.6549019608));
+            /* background: linear-gradient(60deg, black, transparent); */
+            border-radius: 8px;
+            box-shadow: 5px 2px 10px 2px #982b20, -4px -1px 10px 2px #0c0f0c;
         h2 {
             text-align: center;
             padding-top: 24px;
@@ -30,13 +31,37 @@
                 padding: 16px 24px;
                 margin: 12px;
                 border-radius: 8px;
+                font-weight: 400;
+                font-size: 16px;
             }
 
             button {
                 margin-top: 24px;
-                padding: 16px 32px;
-                border-radius: 8px;
+                    padding: 16px 32px;
+                    border-radius: 8px;
+                    color: #f7f7f7;
+                    font-size: 16px;
+                    transition: all 1.5s ease;
+                    background: linear-gradient(275deg, #800080, #ff4433);
+                
+                    &:hover {
+                        background: linear-gradient(275deg, #780578, #c43123);
+                        color: #ffffff;
+                    }
+                
+                    &:active {
+                        background: linear-gradient(275deg, #610661, #972319);
+                        color: #ffffff;
+                    }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .addTaskForm {
+        .newTask {
+            margin: 0 16px;
         }
     }
 }

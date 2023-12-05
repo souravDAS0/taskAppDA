@@ -54,12 +54,45 @@
 
             }
 
-            &:checked{
+            &:checked {
                 background-color: #f56000;
             }
 
             &:checked::before {
                 transform: scale(1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        .task-name {
+            font-size: 1em;
+        }
+
+        .task-desc {
+            font-size: .7em;
+        }
+
+        .task-duedate {
+            font-size: .6em;
+        }
+
+        .operations {
+            a {
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            input[type=checkbox]{
+                width: 16px;
+                height: 16px;
+
+                &::before{
+                    font-size: 24px;
+                }
             }
         }
     }
