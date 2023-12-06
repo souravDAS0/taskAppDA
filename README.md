@@ -22,7 +22,7 @@ npm install
 If any error occurs then run below code to successfully install the node_modules.
 
 ```
-npm instal --force
+npm install --force
 ```
 
 ## Development server
