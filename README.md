@@ -13,9 +13,24 @@ git clone https://github.com/souravDAS0/taskAppDA.git
 
 ## install node_modules
 
-Run `npm install` for installing node_modules in the project directory.
-If any error occurs then run `npm instal --force` to successfully install the node_modules.
+Run this code for installing node_modules in the project directory.
+
+```
+npm install
+```
+
+If any error occurs then run below code to successfully install the node_modules.
+
+```
+npm instal --force
+```
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a developement server.
+
+```
+ng serve
+```
+
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
