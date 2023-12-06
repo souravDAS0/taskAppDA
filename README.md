@@ -5,7 +5,11 @@ This Project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## clone Repo Locally
 
-Run `git clone https://github.com/souravDAS0/taskAppDA.git` to clone the Repo in your Local machine.
+Run this code to clone the Repo in your Local machine.
+
+```
+git clone https://github.com/souravDAS0/taskAppDA.git
+```
 
 ## install node_modules
 
